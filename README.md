@@ -1,54 +1,85 @@
-# ♻️ IoT-based Smart Waste Monitoring System
+# 🗑️ IoT-Based Smart Waste Monitoring System
 
-A smart city project that leverages IoT and cloud services to **monitor urban waste bins in real-time**, helping optimize collection schedules, reduce overflows, and enhance sustainability.  
-🏆 **Shortlisted in Top 5** at a national-level hackathon – Sep 2024.
+**🏆 Shortlisted in the Top 5 Teams at a National-Level Hackathon (Sep 2024)**
 
----
-
-## 🎯 Project Overview
-
-This system uses an **ESP32 microcontroller** with **ultrasonic sensors** to measure the fill-level of public bins. Data is transmitted via **MQTT** to an **AWS-based backend**, where it is processed, stored, and visualized. Alerts are sent to municipal authorities when bins are full, enabling data-driven waste collection.
+This project focuses on smart urban waste management using an end-to-end IoT solution. Waste bins equipped with sensors and ESP32 microcontrollers send real-time data to AWS. The system monitors bin levels, triggers alerts when bins are full, and displays data trends on a dashboard—helping cities reduce operational costs and respond faster.
 
 ---
 
-## 🛠️ Features
+## 🔍 Overview
 
-- 📡 Real-time bin monitoring with ESP32 and ultrasonic sensors
-- ☁️ MQTT-based communication to AWS EC2
-- 📊 Data storage with **AWS DynamoDB**
-- 📩 Auto-alerts via **AWS SNS (SMS)** and **SES (Email)**
-- 📈 Live dashboards with **AWS Grafana**
-- 🏆 Shortlisted in the Top 5 projects at a national-level smart city hackathon
+The system works as follows:
 
----
-
-## 🖼️ Demo & Workflow
-
-- 📽️ **Video Demonstration**: [Watch here](link-to-video)
-- 🧾 **Project Presentation**: [View PPT](link-to-ppt)
-- 🔁 **Workflow Overview**:
-
-| Hardware Layer | Cloud Layer | Alert & Dashboard |
-|----------------|-------------|--------------------|
-| ESP32 + HC-SR04 | MQTT → AWS EC2 | SNS/SES + Grafana |
-| WiFi + Battery | DynamoDB | Web Visualization |
-
-> ![System Diagram](assets/system_architecture.png)
+1. **ESP32** microcontrollers read bin levels using ultrasonic sensors.
+2. Data is transmitted wirelessly via **MQTT** to an AWS-hosted backend.
+3. An **EC2 instance** receives this data, processes it, and stores it in **DynamoDB**.
+4. When bin levels exceed a certain threshold, **SMS and Email alerts** are sent using **AWS SNS and SES**.
+5. A **Grafana dashboard** visualizes bin status and usage trends for smart monitoring.
 
 ---
 
-## 🧰 Tech Stack
+## ⚙️ Technologies Used
 
-| Component      | Tech Used                  |
-|----------------|----------------------------|
-| Microcontroller| ESP32                      |
-| Sensors        | Ultrasonic (HC-SR04)       |
-| Protocol       | MQTT                       |
-| Cloud          | AWS EC2, SNS, SES, DynamoDB|
-| Dashboard      | AWS Grafana                |
-| Language       | C++ (ESP32), Python (AWS)  |
+- **Microcontroller**: ESP32
+- **Sensors**: HC-SR04 (Ultrasonic)
+- **Protocols**: MQTT
+- **Cloud Services**: AWS EC2, DynamoDB, SNS, SES, Grafana
+- **Backend**: Python
+- **Visualization**: Grafana (AWS-hosted)
 
 ---
 
-## 📂 Repository Structure
+## 📸 Demo & Media
 
+<div align="center">
+  <img src="media/bin_hardware_setup.jpg" alt="Hardware Setup" width="500"/>
+  <br><br>
+  <img src="media/alert_sms_screenshot.jpg" alt="SMS Alert" width="300"/> 
+  <img src="media/grafana_dashboard.jpg" alt="Dashboard" width="300"/>
+  <br><br>
+  🎥 [Click here to watch the demo video](https://www.youtube.com/watch?v=your_video_link)
+</div>
+
+---
+
+## 🚀 How It Works – Setup Summary
+
+1. **ESP32 Hardware Setup**  
+   Flash the microcontroller with code to read sensor data and connect to WiFi and MQTT broker.
+
+2. **AWS Backend Configuration**  
+   - Launch an **EC2 instance** to host a Python MQTT listener.
+   - Create a **DynamoDB table** to store incoming sensor data.
+
+3. **Notification System**  
+   - Use **SNS** to send SMS alerts.
+   - Set up **SES** to send emails when bin thresholds are crossed.
+
+4. **Dashboard Monitoring**  
+   - Connect the data source to **AWS Grafana**.
+   - Import a dashboard layout to view bin levels and activity history.
+
+---
+
+## 🏁 Hackathon Achievement
+
+- **Event**: [Hackathon Name]
+- **Date**: September 2024
+- **Result**: Top 5 Finalist (out of [Total Teams])
+- **Focus Areas**: Urban development, IoT, sustainability
+
+---
+
+
+
+
+## 📬 Contact
+
+Have questions or want to collaborate?
+
+- 📧 Email: [anarthi2004@gmail.com]
+- 🔗 LinkedIn: (linkedin.com/in/aditya-narthi-2523a42a2/)
+
+---
+
+⭐ Star this repo if you find the project interesting or helpful!
