@@ -52,9 +52,8 @@ The system works as follows:
 
 ## 🏁 Hackathon Achievement
 
-- **Event**: [Hackathon Name]
 - **Date**: September 2024
-- **Result**: Top 5 Finalist (out of [Total Teams])
+- **Result**: Top 5 Finalist (out of 100+)
 - **Focus Areas**: Urban development, IoT, sustainability
 
 ---
