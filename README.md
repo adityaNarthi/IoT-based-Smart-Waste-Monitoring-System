@@ -29,18 +29,7 @@ The system works as follows:
 
 ---
 
-## 📸 Demo & Media
 
-<div align="center">
-  <img src="media/bin_hardware_setup.jpg" alt="Hardware Setup" width="500"/>
-  <br><br>
-  <img src="media/alert_sms_screenshot.jpg" alt="SMS Alert" width="300"/> 
-  <img src="media/grafana_dashboard.jpg" alt="Dashboard" width="300"/>
-  <br><br>
-  🎥 [Click here to watch the demo video](https://www.youtube.com/watch?v=your_video_link)
-</div>
-
----
 
 ## 🚀 How It Works – Setup Summary
 
